@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.wrapper .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.wrapper .content p {
+    max-width: 870px;
+    font-size: 24px;
+    
+}
+
+@media (max-width: 1120px) {
+    .wrapper {
+        flex-direction: column;
+        gap: var(--m-spacing);
+    }
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,157 @@
+.NavBar {
+    background-color: var(--blue-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px var(--margin);
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.NavBar .leftSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.NavBar .leftSide .bigLogo {
+    width: 194px;
+    height: auto;
+}
+
+.NavBar .leftSide .smallLogo {
+    height: 45px;
+    width: auto;
+    display: none;
+}
+
+.NavBar .leftSide ul {
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.NavBar .leftSide ul li {
+    cursor: pointer;
+}
+
+.NavBar .rightSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.NavBar .rightSide .burgerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.NavBar p {
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* Dropdown menu styles */
+.dropDown {
+    position: fixed;
+    width: auto;
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-sizing: border-box;
+}
+
+.dropDown ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    color: var(--white);
+    margin: 0;
+}
+
+.dropDown ul li {
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: var(--blue-dark);
+}
+.dropDown ul li:hover {
+    background-color: var(--blue);
+}
+
+.NavBar .rightSide .btn {
+    display: flex;
+    align-items: center;
+}
+/* Media Queries */
+@media (max-width: 1400px) {
+    .NavBar .leftSide ul {
+        display: none;
+    }
+
+    .NavBar .rightSide .burgerMenu {
+        display: block;
+    }
+
+    /* Display the dropdown when the menu is toggled */
+    .dropDown {
+        display: block;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .NavBar {
+        padding: 10px var(--margin-mobile);
+    }
+    .NavBar .rightSide .btn {
+        display: none;
+    }
+
+    .bigLogo {
+        display: none;
+    }
+
+    .NavBar .leftSide .smallLogo {
+        display: block;
+    }
+    
+    .NavBar .leftSide ul {
+        display: none;
+    }
+
+    .NavBar .rightSide .burgerMenu {
+        display: block;
+    }
+
+    /* Display the dropdown when the menu is toggled */
+    .dropDown {
+        display: block;
+    }
+    .NavBar p {
+        display: none;
+    }
+
+   
+    
+    .dropDown ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        color: var(--white);
+        margin: 0;
+    }
+    
+    .dropDown ul li {
+        cursor: pointer;
+        width: 100vw;
+        padding: 20px 20px;
+        background-color: var(--blue-dark);
+    }
+}

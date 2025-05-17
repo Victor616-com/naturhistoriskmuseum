@@ -1,0 +1,61 @@
+:root {
+    --shadow: 0px 7px 12.1px 0px rgba(0, 0, 0, 0.26);
+}
+.btnDefault {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--blue);
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: var(--shadow);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    height: auto;
+
+}
+
+.btnText {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--main-bg);
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: var(--shadow);
+    color: var(--blue-dark);
+    font-weight: 400;
+    font-size: 18px;
+    height: auto;
+}
+
+.btnArrow {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--white, #F6F6F6);
+    box-shadow: 0px 7px 12.1px 0px rgba(0, 0, 0, 0.26);
+}
+.btnArrow img {
+    height: 25px;
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    .btnDefault{
+        padding: 9px 20px;
+    }
+    .btnText{
+        padding: 9px 20px;
+    }
+}
