@@ -1,0 +1,81 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--m-spacing, 38px);
+    align-self: stretch;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+.wrapper .cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--m-spacing, 38px);
+    width: 100%;
+    justify-content: center; /* Center items when wrapping */
+}
+
+.wrapper .cardsWrapper .card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--m-spacing, 38px);
+    width: 100%;
+    max-width: 445px;
+}
+.wrapper .cardsWrapper .card .img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 445px;
+    height: 240px;
+    align-self: stretch;
+
+}
+.wrapper .cardsWrapper .card .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-spacing, 10px);
+    align-self: stretch;
+}
+
+.wrapper .btnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: var(--s-spacing, 10px);
+}
+
+@media (max-width: 852px) {
+    .wrapper .cardsWrapper {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 40px;
+    }
+    .wrapper .cardsWrapper .card {
+       min-width: 100%;
+        gap: 10px;
+        width: 100%;
+        max-width: fit-content;
+        
+    }
+    .wrapper .cardsWrapper .card .img {
+        
+        height: 240px;
+        max-width: 100%;
+        align-self: stretch;
+    
+    }
+    .wrapper .cardsWrapper .card .cardContent {
+        gap: var(--s-spacing, 10px);
+    }
+}
+@media (max-width: 852px) {
+    .header {
+        gap: var(--s-spacing, 10px);
+    } 
+}

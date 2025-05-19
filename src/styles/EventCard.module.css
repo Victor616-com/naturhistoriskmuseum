@@ -23,10 +23,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: var(--m-spacing);
+    gap: var(--l-spacing);
     padding: 20px var(--m-spacing, 38px);
     box-sizing: border-box;
-    background-color: var(--black);
+    background-color: var(--lila-dark);
     width: 100%;
 }
 
@@ -36,7 +36,7 @@
     gap: 20px;
 }
 .wrapper .contentWrapper .content h4 {
-    color: white;
+    color: var(--white);
     font-weight: 700;
 }
 .wrapper .contentWrapper .content p {
@@ -47,7 +47,11 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .contentWrapper .btn h4 {
+    color: var(--white);
 }
 
 
@@ -62,7 +66,7 @@
     }
     .wrapper .contentWrapper {
         padding: 15px 15px;
-        gap: 10px;
+        gap: var(--m-spacing);
     }
     .wrapper .contentWrapper .content {
         gap: 20px;

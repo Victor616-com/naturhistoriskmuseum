@@ -50,12 +50,33 @@
     height: 25px;
     width: auto;
 }
+.btnTranparent {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 18px;
+    height: auto;
+}
+.btnTranparent img {
+    height: 11px;
+    width: auto;
+}
+
 
 @media (max-width: 600px) {
     .btnDefault{
         padding: 9px 20px;
     }
     .btnText{
+        padding: 9px 20px;
+    }
+    .btnTranparent{
         padding: 9px 20px;
     }
 }

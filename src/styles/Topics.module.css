@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--m-spacing);
+}
+.wrapper .cardsWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Center wrapped elements */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+@media (max-width: 1324px) {
+    .wrapper .cardsWrapper {
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .wrapper h3 {
+        font-size: 36px;
+    }
+}

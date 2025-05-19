@@ -1,7 +1,6 @@
-import styles from "../styles/ExhibitionCard.module.css";
-import BtnRArrow from "./buttons/BtnRArrow";
+import styles from "../styles/TopicCard.module.css";
 
-const ExhibitionCard = ( {imageUrl, title, description, link}) => {
+const TopicCard = ({imageUrl, title, description}) => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.img} style={{
@@ -14,11 +13,10 @@ const ExhibitionCard = ( {imageUrl, title, description, link}) => {
                     <h4>{title}</h4>
                     <p>{description}</p>
                 </div>
-                <div className={styles.btn}><BtnRArrow /> </div>
                 
             </div>
         </div>
     );
 }
  
-export default ExhibitionCard;
+export default TopicCard;

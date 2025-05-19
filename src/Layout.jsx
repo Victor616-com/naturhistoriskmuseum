@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Footer from "./views/Footer";
 
 
 
@@ -10,6 +11,7 @@ function Layout() {
             <div style={{ marginTop: 'var(--nav-height, 60px)' }}>
                 <Outlet />
             </div>
+            <Footer/>
         </>
     );
 }

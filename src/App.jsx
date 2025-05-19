@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import './App.css'
 import Home from './views/Home';
-import Spotlight from './views/Sportlight';
+import Spotlight from './views/Spotlight';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      { path: "second",
+      { path: "spotlight",
         element: <Spotlight />
       },
     ],

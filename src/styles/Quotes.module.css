@@ -1,0 +1,91 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--m-spacing);
+}
+
+.wrapper .quoteCardWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: var(--m-spacing);
+    flex-wrap: wrap;
+}
+
+.wrapper .quoteCardWrapper .quoteCard {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-spacing);
+    width: 380px;
+    position: relative;
+}
+
+.wrapper .quoteCardWrapper .quoteCard .overlay {
+    display: none;
+}
+
+.wrapper .quoteCardWrapper .quoteCard img {
+    object-fit: cover;
+    width: 380px;
+    height: 320px;
+    display: block;
+}
+
+.wrapper .quoteCardWrapper .quoteCard p {
+    font-size: 24px;
+    margin: 0;
+    color: black; /* default text color */
+}
+
+/* Responsive overlay and quote styling for smaller screens */
+@media (max-width: 912px) {
+    .wrapper .quoteCardWrapper {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper .quoteCardWrapper .quoteCard {
+        position: relative;
+    }
+
+    .wrapper .quoteCardWrapper .quoteCard .overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2); /* 50% black overlay */
+        z-index: 1;
+    }
+
+    .wrapper .quoteCardWrapper .quoteCard .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 2;
+        box-sizing: border-box;
+    }
+
+    .wrapper .quoteCardWrapper .quoteCard p {
+        color: white;
+        font-size: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .wrapper .quoteCardWrapper .quoteCard {
+        width: 100%;
+        height: 400px; /* Increased height */
+    
+    }
+
+    .wrapper .quoteCardWrapper .quoteCard img {
+        width: 100%;
+        height: 400px; /* Increased height */
+    }
+    .wrapper h3 {
+        font-size: 36px;
+    }
+}

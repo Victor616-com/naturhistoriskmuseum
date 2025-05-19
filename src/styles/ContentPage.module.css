@@ -1,6 +1,9 @@
 .wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: var(--l-spacing);
+    
 }
 .contentWrapper {
     margin-top: var(--m-spacing);
@@ -17,4 +20,22 @@
     width: 100%;
     height: 7px;
     background-color: var(--blue);
+}
+.topRightButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50px, -270%);
+    z-index: 10;
+}
+
+@media (max-width: 1000px) {
+    .topRightButton {
+        transform: translate(-50px, -50%);
+    }
+}
+@media (max-width: 600px) {
+    .topRightButton {
+        transform: translate(-15px, -50%);
+    }
 }

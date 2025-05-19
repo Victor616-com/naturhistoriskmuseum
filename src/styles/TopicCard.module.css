@@ -16,17 +16,17 @@
 .wrapper .devider {
     width: 100%;
     height: 7px;
-    background-color: var(--white);
+    background-color: var(--black);
 }
 .wrapper .contentWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: var(--m-spacing);
+    gap: var(--l-spacing);
     padding: 20px var(--m-spacing, 38px);
     box-sizing: border-box;
-    background-color: var(--black);
+    background-color: var(--green-dark);
     width: 100%;
 }
 
@@ -34,9 +34,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .wrapper .contentWrapper .content h4 {
-    color: white;
+    color: var(--white);
     font-weight: 700;
 }
 .wrapper .contentWrapper .content p {
@@ -47,24 +48,24 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .contentWrapper .btn h4 {
+    color: var(--white);
 }
 
 
 @media (max-width: 600px) {
-
     .wrapper {
-        width: 280px;
+        width: 100%; /* Fill available container width */
     }
     .wrapper .img {
+        width: 100%; /* Match parent width */
         height: 190px;
-        width: 280px;
     }
     .wrapper .contentWrapper {
-        padding: 15px 15px;
-        gap: 10px;
-    }
-    .wrapper .contentWrapper .content {
-        gap: 20px;
+        padding: 15px;
+        gap: var(--m-spacing);
     }
 }

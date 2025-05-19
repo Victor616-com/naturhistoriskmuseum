@@ -1,0 +1,66 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 80px;
+}
+.wrapper .img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 660px;
+    width: 665px;
+}
+.wrapper .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 660px;
+    gap: 32px;
+}
+.wrapper .content .contentHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.wrapper .content .admissionTypes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+.wrapper .content .admissionType {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wrapper .content .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media (max-width: 1080px) {
+
+    .wrapper .img {
+        display: none;
+    }
+    .wrapper .content {
+        width: 100%;
+        gap: 25px;
+    }
+    .wrapper .content .admissionTypes {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .wrapper .content .contentHeader {
+        gap: 8px;
+    }
+}

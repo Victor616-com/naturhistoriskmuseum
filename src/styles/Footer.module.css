@@ -1,0 +1,220 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    padding: var(--m-spacing, 38px) var(--margin);
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--blue);
+    box-sizing: border-box;
+}
+p{
+    color: var(--white);
+}
+h4 {
+    color: var(--white);
+    font-size: 30px;
+}
+h5 {
+    color: var(--white);
+}
+.wrapper .emailSubscription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.formWrapper {
+    
+}
+.wrapper .emailSubscription .emailText {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+.wrapper .emailSubscription .emailText p {
+    color: var(--white);
+}
+
+.wrapper .mainContent {
+    display: flex;
+    align-items: stretch;
+    gap: 47px;
+    align-self: stretch;
+}
+.wrapper .mainContent .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--m-spacing, 38px);
+    
+}
+.wrapper .mainContent .contacts .contactCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-spacing, 10px);
+}
+.wrapper .mainContent .contacts .contactCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wrapper .mainContent .contacts .contactCard .contactCardContent p {
+    color: var(--white);
+}
+
+.wrapper .mainContent .usefulLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--m-spacing, 38px);
+    flex: 1 0 0;
+    height: auto;
+    flex: 1;
+}
+.wrapper .mainContent .usefulLinks .smileyReport {
+    color: var(--white);
+}
+.wrapper .mainContent .usefulLinks .smileyReport span{
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.wrapper .mainContent .usefulLinks p {
+    font-size: 14px;
+}
+.wrapper .mainContent .usefulLinks .columnsWrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 47px;
+    align-self: stretch;
+    margin-top: 13px;
+}
+.wrapper .mainContent .usefulLinks .columnsWrapper .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+}
+.wrapper .mainContent .usefulLinks .columnsWrapper .column .program {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 6px;
+}
+.wrapper .mainContent .usefulLinks .columnsWrapper .column .program p {
+    color: var(--white);
+}
+.wrapper .mainContent .usefulLinks .columnsWrapper .column .program p span {
+    font-weight: 700;
+    font-size: 14px;
+}
+.wrapper .mainContent .usefulLinks .columnsWrapper .column .links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wrapper .mainContent .usefulLinks .columnsWrapper .column .links li {
+    font-size: 14px;
+    display: block; 
+    color: var(--white);
+    cursor: pointer;
+}
+
+.wrapper .devider {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: var(--white);
+}
+
+.wrapper .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+.wrapper .bottom p {
+    font-size: 14px;
+}
+
+.wrapper .bottom .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    
+}
+.wrapper .bottom .copyright p {
+    color: var(--white);
+}
+.wrapper .bottom .copyright > :nth-last-child(-n + 3) {
+    text-decoration: underline;
+    color: var(--white);
+    cursor: pointer;
+}
+.wrapper .bottom .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 1070px) {
+    .wrapper .mainContent {
+        flex-direction: column;
+    }
+    .wrapper .mainContent .contacts {
+        flex-direction: row;
+        width: 100%;
+    }
+    .wrapper .mainContent .usefulLinks .columnsWrapper {
+        margin-top: 0;
+    }
+}
+@media (max-width: 915px) {
+    .wrapper .emailSubscription {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 791px) {
+    .wrapper .mainContent .contacts {
+        flex-direction: column;
+        width: 100%;
+    }
+    .wrapper .mainContent .usefulLinks .columnsWrapper {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+    .wrapper .mainContent .usefulLinks .columnsWrapper .column {
+        min-width: 200px;
+    }
+}
+@media (max-width: 600px) {
+    .wrapper .emailSubscription {
+        gap: 24px;
+    }
+    .wrapper .emailSubscription .emailText {
+        gap: 10px;
+    }
+    .wrapper .emailSubscription .formWrapper {
+        width: 100%;
+    }
+    .wrapper .mainContent .usefulLinks .columnsWrapper .column {
+        min-width: 100px;
+    }
+}
