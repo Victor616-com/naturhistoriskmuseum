@@ -1,6 +1,7 @@
 import styles from "../styles/NavBar.module.css";
 import { useState, useRef, useEffect } from "react";
 import BtnDefault from "./buttons/btnDefault";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,6 +47,7 @@ const NavBar = () => {
         <div>
             <div className={styles.NavBar}>
                 <div className={styles.leftSide}>
+                <Link to="/naturhistoriskmuseum/">
                     <img
                         className={styles.bigLogo}
                         src="/naturhistoriskmuseum/assets/images/big_logo.png"
@@ -56,6 +58,7 @@ const NavBar = () => {
                         src="/naturhistoriskmuseum/assets/images/small_logo.png"
                         alt="logo"
                     />
+                </Link>
                     <ul>
                         <li>Visit us</li>
                         <li>School & institution</li>
