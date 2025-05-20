@@ -52,7 +52,7 @@ const ContentSpotlightPage = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.topRightButton}>
-                <BtnText>Buy Tikets</BtnText>
+                <BtnText>Buy Tickets</BtnText>
             </div>
             <div className={styles.contentWrapper}>
                 <AboutContent 
