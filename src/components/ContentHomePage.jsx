@@ -20,7 +20,7 @@ const exhibitionCardsContent = [
     {
         imageUrl: "/naturhistoriskmuseum/assets/images/oops.png",
         title: "Oops!",
-        description: "Discover the new exhibition Beetles! The obsession with a colection"
+        description: "From evolutionary errors to unexpected wonders."
     },
     {
         imageUrl: "/naturhistoriskmuseum/assets/images/expedition_to_africa.png",
@@ -61,13 +61,13 @@ const eventCardsContent = [
         imageUrl: "/naturhistoriskmuseum/assets/images/event3.png",
         title: "Experience the wild horses",
         description: "Get a very special experience in Denmarks most beautiful enviroment.",
-        date: "Fri 10 Feb"
+        date: "Sat 10 Feb"
     },
     {
-        imageUrl: "/naturhistoriskmuseum/assets/images/event3.png",
-        title: "Experience the wild horses",
-        description: "Get a very special experience in Denmarks most beautiful enviroment.",
-        date: "Fri 10 Feb"
+        imageUrl: "/naturhistoriskmuseum/assets/images/event4.png",
+        title: "Design Expo",
+        description: "Experience something unique in Denmark’s most beautiful setting.",
+        date: "Mon 13 Feb"
     }
 ]
 

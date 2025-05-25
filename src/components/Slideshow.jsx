@@ -31,22 +31,22 @@ const Slideshow = ({ items, renderItem, title }) => {
         setCurrentOffset(prev => Math.max(prev - moveBy, 0));
     };
 
-    const handleTouchStart = (e) => {
-        touchStartX.current = e.touches[0].clientX;
-    };
+const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+};
 
-    const handleTouchEnd = (e) => {
-        touchEndX.current = e.changedTouches[0].clientX;
-        const diff = touchStartX.current - touchEndX.current;
+const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    const diff = touchStartX.current - touchEndX.current;
 
-        if (Math.abs(diff) > 50) {
-            if (diff > 0) {
-                nextSlide(); // Swiped left
-            } else {
-                prevSlide(); // Swiped right
-            }
+    if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+            nextSlide();
+        } else {
+            prevSlide(); 
         }
-    };
+    }
+};
 
     return (
         <div className={styles.wrapper}>

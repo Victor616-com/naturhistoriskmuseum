@@ -24,7 +24,7 @@ const exhibitionCardsContent = [
     {
         imageUrl: "/naturhistoriskmuseum/assets/images/oops.png",
         title: "Oops!",
-        description: "Discover the new exhibition Beetles! The obsession with a colection"
+        description: "From evolutionary errors to unexpected wonders."
     },
     {
         imageUrl: "/naturhistoriskmuseum/assets/images/expedition_to_africa.png",
@@ -66,12 +66,12 @@ const ContentSpotlightPage = () => {
                 <Quotes
                     quotes={[
                         {
-                        imageURL: "/naturhistoriskmuseum/assets/images/spotlight_img1.png",
+                        imageURL: "/naturhistoriskmuseum/assets/images/quote1.png",
                         alt: "Danish man",
                         quote: '"I don’t have all the answers, but I think we need to start talking about the uncomfortable stuff—otherwise nothing really changes."'
                         },
                         {
-                        imageURL: "/naturhistoriskmuseum/assets/images/spotlight_img1.png",
+                        imageURL: "/naturhistoriskmuseum/assets/images/quote2.png",
                         alt: "Danish man",
                         quote: '“This is what we need, more of these honest moments—unfiltered, personal, and willing to start a conversation about things that matter to you.”'
                         }

@@ -25,7 +25,7 @@ const NavBar = () => {
 
 
 
-    //FUnction to close the dropdown if the screen gets bigger that 1400px
+    //Function to close the dropdown if the screen gets bigger that 1400px
     useEffect(() => {
         const handleResize = () => {
            
@@ -60,6 +60,7 @@ const NavBar = () => {
                     />
                 </Link>
                     <ul>
+                        {/* The would become links in the future*/ }
                         <li>Visit us</li>
                         <li>School & institution</li>
                         <li>Knowledge & research</li>
@@ -96,6 +97,7 @@ const NavBar = () => {
                     }}
                 >
                     <ul>
+                        {/* The would become links in the future*/ }
                         <li>Visit us</li>
                         <li>School & institution</li>
                         <li>Knowledge & research</li>
